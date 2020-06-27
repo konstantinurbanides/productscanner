@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:glutenfree_app/scan.dart';
+import 'package:glutify/scan.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: Colors.white,
+      statusBarColor: Color(0xff09af00),
       statusBarBrightness: Brightness.dark,
     ));
     return MaterialApp(
       title: 'Glutify',
       theme: ThemeData(
-        primaryColor: Colors.white
+        primaryColor: Color(0xff09af00)
       ),
       home: ScanScreen(),
     );
